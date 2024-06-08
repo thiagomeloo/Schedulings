@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f13ce94dd96ee215c9baaba2df13499e",
+    "content-hash": "5035a154d8954a06d89413917ace80cf",
     "packages": [
         {
             "name": "brick/math",
@@ -505,6 +505,78 @@
                 }
             ],
             "time": "2023-10-06T06:47:41+00:00"
+        },
+        {
+            "name": "epessine/axis",
+            "version": "v0.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/epessine/axis.git",
+                "reference": "dd87384c108969507cbbbfb1d25144df8779cff9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/epessine/axis/zipball/dd87384c108969507cbbbfb1d25144df8779cff9",
+                "reference": "dd87384c108969507cbbbfb1d25144df8779cff9",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "^10.0|^11.0",
+                "livewire/livewire": "^3.0",
+                "php": "^8.2|^8.3"
+            },
+            "require-dev": {
+                "laravel/pint": "^1.15",
+                "orchestra/testbench": "^9.0",
+                "pestphp/pest": "^2.34",
+                "pestphp/pest-plugin-livewire": "^2.1",
+                "phpstan/phpstan": "^1.10.34",
+                "rector/rector": "^0.19"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Axis\\AxisServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Axis\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Eduardo Pessine",
+                    "email": "eduardopessine@gmail.com"
+                }
+            ],
+            "description": "Draw charts with a simple API on Laravel",
+            "homepage": "https://epessine.github.io/axis/",
+            "keywords": [
+                "Chart.js",
+                "charts",
+                "draw",
+                "laravel",
+                "livewire",
+                "php"
+            ],
+            "support": {
+                "issues": "https://github.com/epessine/axis/issues",
+                "source": "https://github.com/epessine/axis/tree/v0.6.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/epessine",
+                    "type": "github"
+                }
+            ],
+            "time": "2024-05-02T20:10:41+00:00"
         },
         {
             "name": "fruitcake/php-cors",

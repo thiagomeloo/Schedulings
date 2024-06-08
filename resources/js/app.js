@@ -1,7 +1,8 @@
 import './bootstrap';
 
-import Alpine from 'alpinejs';
+import './../../vendor/power-components/livewire-powergrid/dist/powergrid'
+import './../../vendor/power-components/livewire-powergrid/dist/tailwind.css'
 
-window.Alpine = Alpine;
+import flatpickr from "flatpickr";
+import 'flatpickr/dist/flatpickr.min.css';
 
-Alpine.start();

@@ -1,6 +1,8 @@
 import defaultTheme from 'tailwindcss/defaultTheme';
 import forms from '@tailwindcss/forms';
 
+const colors = require('tailwindcss/colors')
+
 /** @type {import('tailwindcss').Config} */
 export default {
     darkMode: 'class',
@@ -12,11 +14,13 @@ export default {
         './vendor/power-components/livewire-powergrid/resources/views/**/*.php',
         './vendor/power-components/livewire-powergrid/src/Themes/Tailwind.php'
     ],
-
     theme: {
         extend: {
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
+            },
+            colors: {
+                "pg-primary": colors.gray,
             },
         },
     },

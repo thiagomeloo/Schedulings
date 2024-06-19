@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Livewire\User\Index;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -22,6 +23,13 @@ Route::middleware('auth')->group(function () {
                 Route::delete('/', 'destroy')->name('destroy');
             });
         });
+
+    Route::prefix('user')
+        ->name('user.')
+        ->group(function(){
+            Route::get('/', Index::class)->name('index');
+        });
+
 });
 
 require __DIR__.'/auth.php';

@@ -17,8 +17,6 @@ final class Table extends PowerGridComponent
 {
     public function setUp(): array
     {
-        $this->showCheckBox();
-
         return [
             Footer::make()
                 ->showPerPage()
